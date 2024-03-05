@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      body {
+        background-color: #888; /* Màu xám cho nền */
+        color: #fff; /* Màu trắng cho văn bản */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/users/logout">Log Out</a>
+    <h1 class="thead-dark"><%= title %></h1>
+    <p>Welcome <%= uname %></p>
+    <table class="table">
+      <%- product_cell%>
+    </table>
+  </body>
+</html>
